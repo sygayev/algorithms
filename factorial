@@ -4,3 +4,19 @@ def factorial(n):
     else:
         return n * factorial(n-1)
 print(factorial(4))
+
+def fib(n):
+    a,b = 0 ,1
+    while n > 0:
+        a,b = b, b+a
+        n-=1
+    return a
+print(fib(4))
+
+def fib(n):
+    if n <=1:
+        return (n,0)
+    else:
+        (a,b) = fib(n-1)
+        return (a+b,a) 
+print(fib(4))
